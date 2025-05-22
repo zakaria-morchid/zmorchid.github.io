@@ -3,17 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Supprimer mon compte</title>
+    <title>Gestion des données personnelles</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 40px;
+            background-color: #f7f7f7;
+            color: #333;
         }
         h1 {
-            color: #333;
+            color: #2c3e50;
+            text-align: center;
         }
         .content {
             font-size: 18px;
+            text-align: center;
         }
         .btn {
             background-color: #e53935;
@@ -22,26 +26,46 @@
             border: none;
             font-size: 16px;
             cursor: pointer;
+            margin-top: 20px;
         }
         .btn:hover {
             background-color: #d32f2f;
+        }
+        .links {
+            margin-top: 20px;
+            font-size: 16px;
+        }
+        .links a {
+            color: #2980b9;
+            text-decoration: none;
+            margin: 10px;
+        }
+        .links a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
 <body>
 
-    <h1>Demande de suppression de compte</h1>
+    <h1>Gestion des données personnelles</h1>
     <div class="content">
-        <p>Pour supprimer votre compte et toutes vos données personnelles de notre application, veuillez remplir le formulaire ci-dessous.</p>
-        <form action="/submit-deletion-request" method="POST">
-            <label for="email">Votre Email :</label><br>
-            <input type="email" id="email" name="email" required><br><br>
+        <p>Bienvenue sur la page de gestion des données personnelles. Vous pouvez ici gérer la suppression de votre compte ainsi que consulter notre politique de confidentialité.</p>
 
-            <label for="reason">Raison de la suppression :</label><br>
-            <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+        <h2>1. Supprimer mon compte</h2>
+        <p>Si vous souhaitez supprimer votre compte et toutes les données associées, cliquez sur le bouton ci-dessous pour soumettre une demande de suppression.</p>
+        <a href="https://ton-site.com/delete-account" class="btn" target="_blank">Supprimer mon compte</a>
+        
+        <h2>2. Politique de confidentialité</h2>
+        <p>Pour comprendre comment nous gérons vos données personnelles, veuillez consulter notre politique de confidentialité.</p>
+        <a href="https://ton-site.com/privacy-policy" class="links">Lire la politique de confidentialité</a>
 
-            <button type="submit" class="btn">Soumettre la demande</button>
-        </form>
+        <div class="links">
+            <p>Liens pour d'autres applications :</p>
+            <a href="https://ton-site.com/app1-delete-account" target="_blank">Supprimer mon compte (App 1)</a>
+            <a href="https://ton-site.com/app1-privacy-policy" target="_blank">Politique de confidentialité (App 1)</a>
+            <a href="https://ton-site.com/app2-delete-account" target="_blank">Supprimer mon compte (App 2)</a>
+            <a href="https://ton-site.com/app2-privacy-policy" target="_blank">Politique de confidentialité (App 2)</a>
+        </div>
     </div>
 
 </body>
