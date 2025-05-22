@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer mon compte</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        h1 {
+            color: #333;
+        }
+        .content {
+            font-size: 18px;
+        }
+        .btn {
+            background-color: #e53935;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #d32f2f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Demande de suppression de compte</h1>
+    <div class="content">
+        <p>Pour supprimer votre compte et toutes vos données personnelles de notre application, veuillez remplir le formulaire ci-dessous.</p>
+        <form action="/submit-deletion-request" method="POST">
+            <label for="email">Votre Email :</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="reason">Raison de la suppression :</label><br>
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea><br><br>
+
+            <button type="submit" class="btn">Soumettre la demande</button>
+        </form>
+    </div>
+
+</body>
+</html>
