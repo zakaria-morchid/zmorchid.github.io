@@ -49,24 +49,24 @@
 
     <h1>Gestion des données personnelles</h1>
     <div class="content">
-        <p>Bienvenue sur la page de gestion des données personnelles. Vous pouvez ici gérer la suppression de votre compte ainsi que consulter notre politique de confidentialité.</p>
-
-        <h2>1. Supprimer mon compte</h2>
-        <p>Si vous souhaitez supprimer votre compte et toutes les données associées, cliquez sur le bouton ci-dessous pour soumettre une demande de suppression.</p>
-        <a href="https://ton-site.com/delete-account" class="btn" target="_blank">Supprimer mon compte</a>
-        
-        <h2>2. Politique de confidentialité</h2>
-        <p>Pour comprendre comment nous gérons vos données personnelles, veuillez consulter notre politique de confidentialité.</p>
-        <a href="https://ton-site.com/privacy-policy" class="links">Lire la politique de confidentialité</a>
-
         <div class="links">
-            <p>Liens pour d'autres applications :</p>
-            <a href="https://ton-site.com/app1-delete-account" target="_blank">Supprimer mon compte (App 1)</a>
-            <a href="https://ton-site.com/app1-privacy-policy" target="_blank">Politique de confidentialité (App 1)</a>
-            <a href="https://ton-site.com/app2-delete-account" target="_blank">Supprimer mon compte (App 2)</a>
-            <a href="https://ton-site.com/app2-privacy-policy" target="_blank">Politique de confidentialité (App 2)</a>
+            <a href="#" id="app1DeleteAccount" target="_blank">Supprimer mon compte (Smart Prep)</a>
+            <a href="#" id="app1PrivacyPolicy" target="_blank">Politique de confidentialité (Smart Prep)</a>
+            <a href="#" id="app2DeleteAccount" target="_blank">Supprimer mon compte (E-Commerce)</a>
+            <a href="#" id="app2PrivacyPolicy" target="_blank">Politique de confidentialité (E-Commerce)</a>
         </div>
     </div>
+
+    <script>
+        // Définir l'URL de base dans une variable
+        const baseUrl = "https://zakaria-morchid.github.io/zmorchid.github.io";
+
+        document.getElementById('app1DeleteAccount').href = `${baseUrl}/app1-delete-account`;
+        document.getElementById('app1PrivacyPolicy').href = `${baseUrl}/app1-privacy-policy`;
+
+        document.getElementById('app2DeleteAccount').href = `${baseUrl}/app2-delete-account`;
+        document.getElementById('app2PrivacyPolicy').href = `${baseUrl}/app2-privacy-policy`;
+    </script>
 
 </body>
 </html>
